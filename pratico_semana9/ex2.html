@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.</title>
+</head>
+<body>
+    <h1>Calculadora Basica</h1>
+    <script>
+    
+    alert("Bem-vindo à calculadora básica!");
+
+    var operacao = prompt("Escolha a operação desejada: soma, subtração, multiplicação ou divisão").toLowerCase();
+
+    if (operacao === "soma" || operacao === "subtração" || operacao === "multiplicação" || operacao === "divisão") {
+        var numero1 = parseFloat(prompt("Digite o primeiro número:"));
+        var numero2 = parseFloat(prompt("Digite o segundo número:"));
+
+        var resultado;
+
+        if (operacao === "soma") {
+            resultado = numero1 + numero2;
+
+        } else if (operacao === "subtração") {
+            resultado = numero1 - numero2;
+
+        } else if (operacao === "multiplicação") {
+            resultado = numero1 * numero2;
+            
+        } else if (operacao === "divisão") {
+            resultado = numero1 / numero2;
+        }
+
+        alert("O resultado da operação " + operacao + " é: " + resultado);
+    } else {
+        alert("Operação inválida. Por favor, escolha soma, subtração, multiplicação ou divisão.");
+    }
+
+    </script>    
+</body>
+</html>
